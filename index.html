@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jai Aditya - Portfolio</title>
+  <!-- Optional: Include Animate.css for additional animation effects -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+  <style>
+    /* Basic Reset and Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+      padding: 0 20px;
+    }
+    /* Header */
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1em;
+    }
+    /* Profile Picture Styles */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    /* Custom Animation for Fade-In */
+    .image-animation {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Navigation */
+    nav {
+      background: #555;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      font-size: 1.1em;
+      margin: 0 15px;
+      padding: 5px 0;
+    }
+    nav a:hover {
+      border-bottom: 2px solid #fff;
+    }
+    /* Sections */
+    section {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    section h2 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    /* Grid Layout for Education, Experience, Projects */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .grid-item {
+      flex: 1;
+      min-width: 250px;
+      background: #fafafa;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <!-- Add your image here. Make sure to update the src with your actual image file path -->
+      <img src="images/profile.jpg" alt="Jai Aditya" class="profile-pic image-animation" />
+      <h1>Jai Aditya</h1>
+      <p>Email: <a href="mailto:jaiaditya613@gmail.com" style="color: #fff;">jaiaditya613@gmail.com</a> | Mobile: 9354328014</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jai-aditya-9775811a7/" target="_blank" style="color: #fff;">View Profile</a></p>
+    </div>
+  </header>
+  
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello, I'm Jai Aditya – a passionate software developer with a strong background in computer science and hands-on experience in both software development and human resources. I enjoy working on challenging projects, from building a functional grocery store app to researching code smell detection tools.
+      </p>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>10th Grade</h3>
+          <p><strong>Institution:</strong> Cambridge Foundation School, Rajouri Garden</p>
+          <p><strong>Board:</strong> CBSE</p>
+          <p><strong>Year:</strong> 2016</p>
+        </div>
+        <div class="grid-item">
+          <h3>12th Grade</h3>
+          <p><strong>Institution:</strong> Cambridge Foundation School, Rajouri Garden</p>
+          <p><strong>Board:</strong> CBSE</p>
+          <p><strong>Passing Year:</strong> 2018</p>
+        </div>
+        <div class="grid-item">
+          <h3>B. Tech</h3>
+          <p><strong>Institution:</strong> Amity University, Noida</p>
+          <p><strong>Passing Year:</strong> Nov,2022</p>
+        </div>
+      </div>
+      <div class="grid" style="margin-top:20px;">
+        <div class="grid-item">
+          <h3>Coding Certification</h3>
+          <p><strong>Institution:</strong> Coding Blocks</p>
+          <p><strong>Duration:</strong> May 2022 - Nov 2022</p>
+          <p><strong>Focus:</strong> C++ with Data Structures</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>Software Developer Intern</h3>
+          <p><strong>Organization:</strong> Clearexam</p>
+          <p><strong>Duration:</strong> 42 Days</p>
+          <p>
+            Worked on understanding the architecture and functionality of the Open edX platform, contributing to the development of advanced learning solutions.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>HR Intern</h3>
+          <p><strong>Organization:</strong> Subhansh Sewa Trust</p>
+          <p><strong>Duration:</strong> 45 Days</p>
+          <p>
+            Assisted in recruitment processes, managed employee relations, maintained records, and supported HR projects through research and analysis.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <h3>Grocery App</h3>
+          <p>
+            Developed a fully functional grocery store application that allows users to order groceries online as a summer project during the 3rd year of studies.
+          </p>
+        </div>
+        <div class="grid-item">
+          <h3>Code Smell and Detection Tools</h3>
+          <p>
+            Conducted research and developed a project focused on detecting code smells, culminating in a comprehensive research paper as a final year project.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills & Certifications</h2>
+      <ul>
+        <li>C &amp; C++ with Data Structures</li>
+        <li>Python</li>
+        <li>MySQL, RDBMS, DBMS</li>
+        <li>CCNA Routing and Switching: Introduction to Networks</li>
+        <li>Software Project Management</li>
+        <li>Introduction to Cloud Computing</li>
+        <li>Specializations in Artificial Intelligence, Cyber Security, and Big Data Architecture</li>
+      </ul>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Feel free to reach out via email at <a href="mailto:jaiaditya613@gmail.com">jaiaditya613@gmail.com</a> or call at 9354328014.
+      </p>
+      <p>
+        Connect with me on <a href="https://www.linkedin.com/in/jai-aditya-9775811a7/" target="_blank">LinkedIn</a>.
+      </p>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Jai Aditya. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
